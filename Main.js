@@ -1,6 +1,4 @@
-async function download(link) {
+async function open(link) {
   if (!link) { return; }
-  const opened = await window.open(link, 'Download')
-  setTimeout(() => { opened.close(); }, 5000);
-
+  window.open(link)
 }

@@ -1,13 +1,25 @@
+:root {
+	/* Variables */
+
+	--templateButtonBGColor:  #2ecc71;
+	--templateButtonTextColor: #FFFFFFFF;
+	--exitButtonBGColor: #e74c3c;
+	--exitButtonTextColor: #FFFFFFFF;
+	--bodyColor: #000;
+	--h1TextColor: #FFFFFFFF;
+	--all-ButtonBorderRadius: 24px;
+}
+
 body{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background: #000;
+	background: var(--bodyColor);
 }
 
 .Text {
   text-align: center;
-  color: white;
+  color: var(--h1TextColor);
 }
 
 .List button[type = "button"]{
@@ -16,16 +28,16 @@ body{
 	display: block;
 	margin: 20px auto;
 	text-align: center;
-	border: 2px solid #2ecc71;
+	border: 2px solid var(--templateButtonBGColor);
 	padding: 14px 10px;
 	width: 200px;
 	outline: none;
-	color: white;
-	border-radius: 24px;
+	color: var(--templateButtonTextColor);
+	border-radius: var(--all-ButtonBorderRadius);
 	transition: 0.25s;
 }
 .List button[type = "button"]:hover{
-	background: #2ecc71;
+	background: var(--templateButtonBGColor);
 }
 .List button[type = "exit"]{
 	border: 0;
@@ -33,14 +45,14 @@ body{
 	display: block;
 	margin: 20px auto;
 	text-align: center;
-	border: 2px solid #e74c3c;
+	border: 2px solid var(--exitButtonBGColor);
 	padding: 14px 10px;
 	width: 200px;
 	outline: none;
-	color: white;
-	border-radius: 24px;
+	color: var(--exitButtonTextColor);
+	border-radius: var(--all-ButtonBorderRadius);
 	transition: 0.25s;
 }
 .List button[type = "exit"]:hover{
-  background: #e74c3c;
+  background: var(--exitButtonBGColor);
 }
